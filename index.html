@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="aside">
+      <button>Add new book</button>
+
+      <form id="form"  action="/submit-form" method="post">
+   <!-- class="invisible" -->
+     
+  <label for="author">Author:</label>
+  <input type="text" id="author" name="author" /><br /> <br /> 
+
+  <label for="title">Title:</label>
+  <input type="text" id="title" name="title" /><br /> <br /> 
+
+  <label for="numOfPages">Number Of Pages:</label>
+  <input type="text" id="numOfPages" name="numOfPages" /><br /> <br /> 
+
+   <label for="isRead">Read:</label>
+  <input type="checkbox" id="isRead" name="isRead" /><br /> <br /> 
+
+        <button id="btnSaveBook" type="submit">Submit</button>
+        <input type="reset" value="Clear Form">
+   
+</form>
+    </div>
+    <div class="main">
+        <table id="myTable">
+  <tr class="borderTable">
+    <th>Author:</th>
+    <th>Title:</th>
+    <th>Number of pages:</th>
+    
+     
+  </tr>
+  <!-- <tr>
+    
+  </tr>
+  <tr>
+    <td>Data 2A</td>
+    <td>Data 2B</td>
+    <td>Data 2C</td>
+  </tr> -->
+</table>
+    </div>
+</body>
+</html>
